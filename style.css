@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ececf3;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+nav {
+    background-color: #DEE1EA !important;
+}
+
+.navLink {
+    color: #000 !important;
+}
+
+.navLink:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+
+#home {
+    background-image: url(./imgs/3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    padding: 20vh 20px 0 20px;
+    margin-top: -17px;
+}
+
+.sec {
+    text-transform: uppercase;
+    font-size: 3.5em;
+    font-weight: 600;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.sec::after {
+    content: "";
+    height: 4px;
+    width: 80vw;
+    background-color: #000;
+    position: absolute;
+    top: 115%;
+    left: 0;
+}
+
+
+#home h3 {
+    text-transform: capitalize;
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+/* #home h3::after{
+    content: "";
+    background-color: #000;
+    position: absolute;
+    bottom: 3px;
+    width: 200px;
+    height: 3px;
+    font-size: small;
+} */
+#home p {
+    font-weight: 400;
+    font-size: 1.3em;
+    padding-top: 3%;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+#about {
+    padding: 20vh 20px 10vh 20px;
+    background-color: #fff;
+    height: 70vh;
+}
+
+
+.about .paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#education {
+    background-color: #E6E9EE;
+    height: 60vh;
+    padding: 20vh 20px 10vh 20px;
+}
+
+
+.eduHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#skills {
+    padding: 20vh 20px 10vh 20px;
+    background-color: #fff;
+    height: 120vh;
+}
+
+#skills h3 {
+    font-weight: 700;
+}
+
+#skills ul {
+    list-style: none;
+    line-height: 40px;
+
+}
+
+#skills ul li {
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+#skills ul li span {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+#experience {
+    background-color: #E6E9EE;
+    height: 60vh;
+    padding: 20vh 20px 10vh 20px;
+}
+
+#experience .exp {
+    font-weight: 600;
+}
+
+#experience .expHeader {
+
+    font-weight: 500;
+}
+
+#experience p {
+    font-weight: 400;
+}
+
+#projects {
+    background-color: #fff;
+    padding: 20vh 20px 0 20px;
+}
+
+#contact {
+    background-color: #E6E9EE;
+    padding: 10vh 20px 10vh 20px;
+    margin-top: 10vh;
+}
+
+#contact .data p{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.thanksPage{
+    height: 80vh;
+    padding: 30vh 0 0 0 ;
+
+}
+.thanksPage .thank{
+    font-size: 6em;
+    font-weight: 400;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+@media (max-width: 1100px) {
+    #about {
+        height: 90vh;
+    }
+
+    #skills {
+        height: 150vh;
+    }
+}
+
+@media (max-width: 850px) {
+    #about {
+        padding: 10vh 20px 10vh 20px;
+        height: 100vh;
+    }
+
+    #skills {
+        height: 170vh;
+    }
+}
+
+@media (max-width: 600px) {
+    #home {
+        padding: 10vh 20px 0 20px;
+
+    }
+
+    #home p {
+        font-size: 1em;
+    }
+
+
+    #about {
+        padding: 10vh 20px 10vh 20px;
+        height: 100vh;
+    }
+
+    #skills {
+        height: 220vh;
+    }
+
+}
