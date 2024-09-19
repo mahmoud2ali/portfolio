@@ -223,3 +223,40 @@ nav {
     }
 
 }
+
+
+
+@media (max-width: 500px) {
+    #home {
+        padding: 10vh 20px 0 20px;
+        height: 100vh;
+    }
+
+    #home p {
+        font-size: 0.8em;
+    }
+
+    #education {
+        height: 60vh;
+    }
+    
+    
+    .eduHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about {
+        padding: 10vh 20px 10vh 20px;
+        height: 100vh;
+    }
+    #about .paragraph{
+        font-size: 0.8em;
+    }
+
+    #skills {
+        height: 290vh;
+    }
+    
+
+}
