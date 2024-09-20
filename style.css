@@ -40,6 +40,10 @@ nav {
     position: relative;
 }
 
+.sec h2{
+    font-size: 1em;
+}
+
 .sec::after {
     content: "";
     height: 4px;
@@ -152,25 +156,43 @@ nav {
     padding: 20vh 20px 0 20px;
 }
 
+.card {
+    margin: 2vh 0 0 0 !important;
+}
+.in-view {
+    animation: flipCards 1.5s ease-in-out forwards;
+}
+
+@keyframes flipCards {
+    from {
+        transform: translateX(-1000px); 
+    }
+    to {
+        transform: translateX(0); 
+    }
+}
+
+
 #contact {
     background-color: #E6E9EE;
     padding: 10vh 20px 10vh 20px;
     margin-top: 10vh;
 }
 
-#contact .data p{
+#contact .data p {
     font-size: 1.5em;
     font-weight: 500;
 }
 
-.thanksPage{
-    padding: 30vh 0 0 0 ;
+.thanksPage {
+    padding: 30vh 0 0 0;
 
 }
-.thanksPage .thank{
+
+.thanksPage .thank {
     font-size: 6em;
     font-weight: 400;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     text-transform: capitalize;
     padding-bottom: 15vh;
@@ -223,17 +245,46 @@ nav {
 
 
 @media (max-width: 500px) {
+
+
+    .sec {
+        font-size: 2.5em;
+    }
+
+    .sec h2{
+        font-size: 1em;
+        padding-bottom: 1vh;
+    }
+    .sec h4{
+        font-size: 0.5em;
+    }
+    .eduHeader {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 30px;
+    }
+
     #home p {
         font-size: 0.8em;
     }
 
+/* 
+    .eduHeader h4{
+        font-size: 1em;
+        border: 2px solid green;
+        padding-bottom: 2vh;
+    } */
 
-    .eduHeader {
+    /* .eduHeader {
         display: flex;
-        flex-direction: column;
-    }
-    #about .paragraph{
-        font-size: 0.8em;
-    }   
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    } */
 
-} 
+    #about .paragraph {
+        font-size: 0.8em;
+    }
+
+}
