@@ -6,7 +6,8 @@ export default function About() {
         <section className="about section" id="about">
             <div className="container d-flex flex-column flex-md-row align-items-center">
                 <div className="about-img" data-aos="fade-right">
-                    <img src="imgs/about/Mahmoud_Mohamed2.jpg" alt="Profile" />
+                    <img src={process.env.PUBLIC_URL + '/imgs/about/mahmoud.jpg'} alt="Mahmoud" />
+
                 </div>
                 <div className="about-text ms-md-5 mt-4 mt-md-0" data-aos="fade-left">
                     <h2>About Me</h2>

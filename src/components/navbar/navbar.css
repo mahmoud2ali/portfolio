@@ -13,25 +13,87 @@
   color: #F1FAEE;
   text-decoration: none;
 }
+
 .logo span {
   color: #E63946;
 }
 
+/* Links */
 .nav-links {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .nav-links li {
   margin-left: 25px;
 }
+
 .nav-links a {
   color: #F1FAEE;
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
 }
+
 .nav-links a:hover {
   color: #E63946;
   border-bottom: 2px solid #E63946;
+}
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.menu-toggle .line {
+  width: 25px;
+  height: 3px;
+  background: #F1FAEE;
+  transition: 0.3s;
+}
+
+.menu-toggle .line1.active {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle .line2.active {
+  opacity: 0;
+}
+
+.menu-toggle .line3.active {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(13, 13, 13, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
 }
