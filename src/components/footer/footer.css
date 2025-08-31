@@ -1,0 +1,21 @@
+.footer {
+    background-color: var(--color-dark);
+    padding: 20px 10px;
+    color: var(--color-secondary);
+    font-size: 0.95rem;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    color: var(--color-light);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    color: var(--color-primary);
+}

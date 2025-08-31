@@ -1,0 +1,26 @@
+.about {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 80px 20px;
+}
+
+.about h2 {
+  /* font-family: 'Poppins', sans-serif;
+   */
+  font-family: var(--font-main);
+  color: var(--color-primary);
+  margin-bottom: 20px;
+}
+
+.about-img img {
+  border-radius: 12px;
+  max-width: 300px;
+  box-shadow: 0 5px 20px rgba(230, 57, 70, 0.4);
+}
+
+.about-text p {
+  color: var(--color-secondary);
+  font-size: var(--fs-md);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
