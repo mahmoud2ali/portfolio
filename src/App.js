@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css"
-import Navbar from "./components/navbar/Navbar";
+import Navbar_component from "./components/navbar/Navbar";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Projects from './components/projects/Projects';
@@ -22,7 +22,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <Navbar_component />
       <Home />
       <About />
       <Experience />

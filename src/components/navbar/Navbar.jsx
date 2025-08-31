@@ -1,29 +1,27 @@
 import React, { useState } from "react";
 import "./navbar.css";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-export default function Navbar() {
+export default function Navbar_component() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar">
-      <div className="container d-flex justify-content-between align-items-center">
-        <a href="#home" className="logo">Mahmoud<span>.</span></a>
-
-        
-        <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-          <span className={isOpen ? "line line1 active" : "line line1"}></span>
-          <span className={isOpen ? "line line2 active" : "line line2"}></span>
-          <span className={isOpen ? "line line3 active" : "line line3"}></span>
-        </div>
-
-        
-        <ul className={`nav-links d-flex ${isOpen ? "open" : ""}`}>
-          <li><a href="#home" onClick={() => setIsOpen(false)}>Home</a></li>
-          <li><a href="#about" onClick={() => setIsOpen(false)}>About</a></li>
-          <li><a href="#projects" onClick={() => setIsOpen(false)}>Projects</a></li>
-          <li><a href="#contact" onClick={() => setIsOpen(false)}>Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary p-2">
+      <Container>
+        <Navbar.Brand href="#home">Mahmoud<span>.</span></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+          <Nav>
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
